@@ -1,0 +1,337 @@
+<!doctype html >
+<html>
+
+<head>
+
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+  <!-- <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyD4fYu3IH4sy0vQ5V9k2je2wkz0j8BjTgQ",
+      authDomain: "loyalty-df8ec.firebaseapp.com",
+      databaseURL: "https://loyalty-df8ec.firebaseio.com",
+      projectId: "loyalty-df8ec",
+      storageBucket: "loyalty-df8ec.appspot.com",
+      messagingSenderId: "197790607045"
+    };
+    firebase.initializeApp(config);
+  </script> -->
+  <title> loyalty - leisure and chill </title>
+  <link rel="icon" type="png" href="res/ddfa46da-e89f-4b2b-8511-e9d312c249c3.png">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js">
+  <meta name="description" content="Short, interesting description of your web page." />
+  <!-- <meta> 
+               your music , events and leisure  in one place
+      </meta> -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <!-- <div id="close">
+      <h3>already a member?</h3>
+      <input type="email" placeholder="email..." id="x">
+      <input type="password" placeholder="password..." id="y">
+
+      <button onclick="submit()">Login to your account</button>
+  </div>
+  <div id="open"> -->
+  <div class="h">
+    <nav class="navbar navbar-default navbar-fixed-top" id="myScrollspy">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">LOYALTY</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="file:///C:/Users/LENOVO/Desktop/web/index.html#">home</a></li>
+            <li><a href="file:///C:/Users/LENOVO/Desktop/web/music.html#for">music</a></li>
+            <li><a href="file:///C:/Users/LENOVO/Desktop/web/events.html">events</a></li>
+            <li><a href="file:///C:/Users/LENOVO/Desktop/web/cinema.html">cinema</a></li>
+            <li><a href="#div">info</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+
+    <h1 id="hello"> HELLO </h1>
+  <center>  <img src="file:///C:/Users/LENOVO/Downloads/down.svg" id="louta" ></center>
+  </div>
+  <br>
+  <br>
+  <br>
+  <center><p class="welcome">welcome to loyalty </p></center>
+  <br>
+  <center><p class="world"> world where  music , events and leisure meets </p></center>
+  <br>
+  <p class="for"> here you find your : </p>
+  <br>
+  <br>
+  <ol>
+    <li class="music">music :</li>
+    <br>
+    <div class="wrapper">
+      <ul class="stage">
+        <li class="scene">
+          <div class="movie">
+            <div class="poster">
+            </div>
+            <div class="info">
+              <header>
+                <h1> R U mine </h1>
+                <span class="year">2013</span>
+                <span class="duration">3:43</span>
+              </header>
+              <p>
+                "R U Mine?" is a song by the English indie rock band Arctic Monkeys. It features lyrics written by
+                Arctic Monkeys vocalist and rhythm guitarist Alex Turner, as well as music composed by the entire band
+                . "R U Mine?" debuted at number twenty-three on the UK Singles Chart; the band's highest charting
+                single since "Crying Lightning" reached number twelve in July 2009.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="scene">
+          <div class="movie">
+            <div class="poster"></div>
+            <div class="info">
+              <header>
+                <h1> Billie Eilish - idontwannabeyouanymore </h1>
+                <span class="year">2017</span>
+                <span class="duration"> 3:23 </span>
+              </header>
+              <p>
+                Billie Eilish Pirate Baird O'Connell is an American singer and songwriter. Her debut single, "Ocean
+                Eyes", went viral and has accumulated over 132 million streams on Spotify alone as of October 2018.
+                Each Friday in July, Eilish would add another single to the EP. It was in this manner that the singles
+                "Idontwannabeyouanymore" and "My Boy" were released.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="scene">
+          <div class="movie">
+            <div class="poster"></div>
+            <div class="info">
+              <header>
+                <h1> Imagine Dragons - Natural </h1>
+                <span class="year">2018</span>
+                <span class="duration">3:09</span>
+              </header>
+              <p>
+                "Natural" is a song by American band Imagine Dragons, whose members co-wrote the song with Justin
+                Tranter and its producers Mattman & Robin. It was released by Kidinakorner and Interscope Records on
+                July 17, 2018, serving as the lead single from the band's upcoming fourth studio album Origins (2018).
+                It became their fifth number one song on the US Hot Rock Songs chart.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class=" col-md-6 col-xs-12">
+          <iframe id="down" height="325" width="510" src="https://www.youtube.com/embed/ngzC_8zqInk" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+        </div>
+        <div class="  col-md-6 col-xs-12">
+          <img src="https://i.ytimg.com/vi/MJvKnlEXhOo/maxresdefault.jpg" height="310" width="510" id="taswira" alt="taswiret mta3 el groupe arctic monkeys">
+        </div>
+      </div><br>
+
+      <p class="para">
+        <span id="lyrics">R U mine </span>
+        <button id="bold"> bold </button>
+        <button id="italic"> italic </button>
+        <button id="underlined"> underlined </button>
+        <select id="colore">
+          <option id="blue" value="blue"> blue </option>
+          <option id="pink" value="pink"> pink </option>
+          <option id="purple" value="purple">purple</option>
+        </select>
+        I'm a puppet on a string
+        Tracy island, time-traveling diamond
+        Could a shaped heartaches
+        Come to find ya fall in some velvet morning
+        Years too late
+        She's a silver lining lone ranger riding
+        Through an open space
+        In my mind when she's not right there beside me
+        I go crazy 'cause here isn't where I wanna be
+        And satisfaction feels like a distant memory
+        And I can't help myself
+        All I wanna hear her say is are you mine?
+        Are you mine?
+        Are you mine?
+        Are you mine?
+      </p>
+      <p class="para">
+        <SPAN id="ar"> Arctic Monkeys</SPAN>
+        <br>
+        an English rock band formed in 2002 in High Green, a suburb of Sheffield. The band consists of Alex Turner
+        (lead vocals, guitar, piano), Matt Helders (drums, vocals), Jamie Cook (guitar, keyboards) and Nick O'Malley
+        (bass guitar, backing vocals). Former band member Andy Nicholson (bass guitar, backing vocals) left the band in
+        2006 shortly after their debut album was released.
+      </p>
+    </div> -->
+    <br id="aa">
+
+    <hr >
+    <br id="bb">
+    <li id="events"> events </li>
+    <br>
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5200">
+
+
+
+      
+
+      <ol class="carousel-indicators">
+
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+
+      </ol>
+
+
+
+      <!-- Wrapper for slides -->
+
+      <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+
+          <img id="azerty1" src="https://i.imgur.com/5p51CYA.jpg" alt="...">
+
+        </div>
+
+        <div class="item">
+
+          <img id="azerty2" src="https://i.imgur.com/uHDAnUW.jpg" alt="...">       
+
+        </div>
+
+        <div class="item">
+
+          <img id="azerty3" src="https://i.imgur.com/zVdfXJn.jpg" alt="...">
+
+        </div>
+
+        <div class="item">
+
+          <img id="azerty4" src="https://i.imgur.com/LiJZrVZ.jpg" alt="...">
+
+          
+
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+        <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" role="button"
+        data-slide="next">
+
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+        <span class="sr-only">Next</span> </a>
+
+      <!--end carousel-->
+
+    </div>
+    <hr>
+    <li id="cinema"> cinema </li>
+
+    <div class="film">
+    	<img src="https://images-na.ssl-images-amazon.com/images/I/61H0yjl1iiL._SY741_.jpg" alt="">
+    	<div class="desc"><button>PLAY</button>
+    	<hr>
+        <div class="text">
+          Peu de temps après les événements relatés dans Split, David Dunn - l’homme incassable - poursuit sa traque de La Bête, surnom donné à Kevin Crumb depuis qu’on le sait capable d’endosser 23 personnalités différentes. De son côté, le mystérieux homme souffrant du syndrome des os de verre Elijah Price suscite à nouveau l’intérêt des forces de l’ordre en affirmant détenir des informations capitales sur les deu</div>
+    	</div>
+    </div>
+
+        <div class="film">
+    	<img src="https://i.pinimg.com/originals/f9/71/25/f971254279f931143bcac94c1b63b33b.jpg" alt="">
+    	<div class="desc"><button>PLAY</button>
+    	<hr>
+        <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sint odit fuga odio ullam tempore repellendus blanditiis.</div>
+    	</div>
+    </div>
+
+        <div class="film">
+    	<img src="https://i.redd.it/mioxrsm1sma11.jpg" alt="">
+    	<div class="desc"><button>PLAY</button>
+    	<hr>
+        <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sint odit fuga odio ullam tempore.</div>
+    	</div>
+    </div>
+
+    <div class="film">
+    	<img src="http://www.gstatic.com/tv/thumb/v22vodart/15723785/p15723785_v_v8_aa.jpg" alt="">
+    	<div class="desc"><button>PLAY</button>
+    	<hr>
+        <div class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sint odit fuga odio ullam tempore.</div>
+    	</div>
+    </div>
+<a>                                                             </a>
+<div id ="div">
+    <ul id ="ul" class="footer-links">
+      <li class="li"style="margin-top: 100px"><a href="https://twitter.com/julesforrest">Twitter</a></li>
+      <li class="li"style="margin-top: 100px"><a href="https://codepen.io/julesforrest">Codepen</a></li>
+      <li class="li"style="margin-top: 100px"><a href="mailto:julesforrest@gmail.com">Email</a></li>
+      <li class="li"style="margin-top: 100px"><a href="https://dribbble.com/julesforrest">Dribbble</a></li>
+      <li class="li"style="margin-top: 100px"><a href="https://github.com/julesforrest">Github</a></li>
+      <li>
+        <p style="margin-top: 100px">👋</p>
+      </li>
+      <br>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="331" height="219" id="gmap_canvas" src="https://maps.google.com/maps?q=go%20my%20code&t=k&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">typographic wordpress themes</a></div><style>.mapouter{text-align:right;height:219px;width:331px;}.gmap_canvas {overflow:hidden;background:none!important;height:219px;width:331px;}</style></div>
+    </ul>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+</div>
+
+    <!--latest jQuery 3-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+
+
+    <!--Bootstrap JS-->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+
+
+  
+    
+  </ol>
+
+  
+</body>
+
+</html>
